@@ -7,7 +7,7 @@
 body {
     display: grid;
     grid-template-columns: 4fr 1fr;
-    grid-template-rows: auto auto auto 1fr auto;
+    grid-template-rows: auto auto 1fr auto;
     min-height: 100vh;
     font-family: Arial, sans-serif;
 }
@@ -15,13 +15,23 @@ body {
 .header {
     background-color: #333;
     color: white;
-    padding: 20px;
+    min-height: 100px;
     grid-column: 1 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;    
+}
+
+.header div {
+    padding: 15px;
 }
 
 .nav {
     background-color: black;
-    grid-column: 1 / 4;
+    margin-top: auto;
+    width: 100%;
+    /* grid-column: 1 / 4; */
 }
 
 .nav ul {
