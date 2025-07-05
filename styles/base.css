@@ -32,6 +32,7 @@ h1, h2 {
     font-family: "Bebas Neue", sans-serif;  
     font-size:xx-large;  
     padding: 15px;
+    display: block;
 }
 
 .nav {
@@ -75,10 +76,11 @@ footer .last-modified {
 
 main {
     margin: 2rem auto;
-    padding: 1rem;
+    /* padding: 1rem; */
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;  
+    max-width: 1100px; 
 }
 
 main h1 {
@@ -88,9 +90,9 @@ main h1 {
 }
 
 main .cards-container {
-    display: flex;
+    display: grid;
     gap: 2rem;
-    flex-wrap: wrap;
+    grid-template-columns: 2fr 1fr;
     justify-content: center;
     width: 100%;
 }
@@ -100,8 +102,6 @@ main .cards-container {
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex: 1 1 45%;
-    max-width: 500px;
 }
 
 .card h2 {
@@ -119,12 +119,44 @@ main .cards-container {
     padding: 0.5rem;
 }
 
-.profile.horizontal img {
-    max-width: 200px;
-    height: auto;
-    object-fit: cover;
-}
-
 .profile.horizontal p {
     flex: 1;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: start;
+    padding: 0.5rem;
+}
+
+.row.reverse {
+    direction: rtl;
+}
+
+.row.reverse > * {
+    direction: ltr;
+}
+
+.row img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.divider {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    padding: 0.5rem;
+    color: #666;
 }
