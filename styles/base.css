@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* display: grid; */
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+h1, h2 {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.header {
+    background-color: #003b5c;
+    color: white;
+    text-align: center;
+    min-height: 100px;
+    grid-column: 1 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;    
+}
+
+.header span {
+    font-family: "Bebas Neue", sans-serif;  
+    font-size:xx-large;  
+    padding: 15px;
+}
+
+.nav {
+    background-color: black;
+    margin-top: auto;
+    width: 100%;
+    font-size:large;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 10px 0;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #003b5c;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    grid-column: 1 / 4;    
+    max-height: 100px;    
+}
+
+footer .last-modified {
+    color: #ff0;
+    font-size: 0.9rem;
+}
+
+main {
+    margin: 2rem auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+main h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+main .cards-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 45%;
+    max-width: 500px;
+}
+
+.card h2 {
+    background-color: #1e4b6b;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.profile.horizontal {
+    display: flex;
+    align-items: flex-start; 
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.profile.horizontal img {
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+}
+
+.profile.horizontal p {
+    flex: 1;
+}
