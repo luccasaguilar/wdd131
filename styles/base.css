@@ -54,6 +54,10 @@ h1, h2 {
     font-weight: bold;
 }
 
+nav a:hover {
+    text-decoration: overline;
+}
+
 footer {
     background-color: #003b5c;
     color: white;
