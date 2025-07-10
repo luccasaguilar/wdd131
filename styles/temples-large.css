@@ -1,0 +1,30 @@
+@media screen and (min-width: 500px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    header {
+        flex-direction: row;
+    }
+
+    .nav {
+        position: static;
+    }
+
+    .nav ul {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        box-shadow: none;
+        background: none;
+        gap: 20px;      
+    }
+
+    .nav a {
+        color: white;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+}
