@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f9f7;
+    color: #333;
+}
+
+header {
+    background-color: #b71c1c;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+.card-content .row {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0.2rem 0;
+}
+
+.card-content .label {
+    width: 40%;
+    text-align: right;
+    font-weight: bold;
+    padding-right: 0.5rem;
+}
+
+.card-content .value {
+    width: 60%;
+    text-align: left;
+}
+
+.weather-card h2 {
+    text-align: center;
+    position: relative;
+}
+
+.weather-card .weather-icon {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0.5rem auto;
+}
+
+footer {
+    background-color: #b71c1c;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer .last-modified {
+    color: #ff0;
+    font-size: 0.9rem;
+}

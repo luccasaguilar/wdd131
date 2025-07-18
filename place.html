@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/places-large.css" media="screen and (min-width: 800px)">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>        
+</head>
+<body>
+    <header>
+        <h1>Canada</h1>
+    </header>
+
+    <section class="hero">
+        <picture>
+            <source srcset="images/canada-large.webp" media="(min-width: 1000px)">
+            <source srcset="images/canada-medium.webp" media="(min-width: 800px)">
+            <img src="images/canada-small.webp" alt="Beautiful landscape of Canada"  width="400" height="200">
+        </picture>
+    </section>
+
+    <main>
+        <section class="card data-card">
+            <h2>Data</h2>
+            <div class="card-content">
+                <div class="row"><span class="label">Area:</span><span class="value">9,984,670 km²</span></div>
+                <div class="row"><span class="label">Population:</span><span class="value">40,097,761</span></div>
+                <div class="row"><span class="label">Capital:</span><span class="value">Ottawa</span></div>
+                <div class="row"><span class="label">Languages:</span><span class="value">English, French</span></div>
+                <div class="row"><span class="label">Currency:</span><span class="value">Canadian Dollar (CAD)</span></div>
+                <div class="row"><span class="label">Time Zone:</span><span class="value">UTC−3.5 to UTC−8</span></div>
+                <div class="row"><span class="label">Calling Code:</span><span class="value">+1</span></div>
+                <div class="row"><span class="label">Internet TLD:</span><span class="value">.ca</span></div>
+            </div>
+        </section>
+
+        <section class="card weather-card">
+            <h2>
+                Weather
+                <img src="images/weather_icon.svg" alt="Weather Icon" class="weather-icon">
+            </h2>
+            <div class="card-content">
+                <div class="row"><span class="label">Temperature:</span> <span id="temperature">8°C</span></div>
+                <div class="row"><span class="label">Wind Speed:</span> <span id="windSpeed">10 km/h</span></div>
+                <div class="row"><span class="label">Wind Chill:</span> <span id="windChill">Calculating...</span></div>
+            </div>    
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentYear"></span> - Luccas do Nascimento Aguilar - Canada</p>
+        <p class="last-modified">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
