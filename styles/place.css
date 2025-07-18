@@ -31,16 +31,6 @@ h2 {
     position: relative;
 }
 
-/* h2::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 3px;
-    background-color: var(--primary-color);
-    margin: 0.5rem auto 0;
-    border-radius: 2px;
-} */
-
 .hero img {
     width: 100%;
     height: auto;
