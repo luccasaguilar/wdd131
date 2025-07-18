@@ -1,3 +1,12 @@
+:root {
+    --primary-color: #b71c1c;
+    --background-color: #f2f9f7;
+    --text-color: #333;
+    --accent-color: #ff0;
+    --card-radius: 8px;
+    --card-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,12 +15,12 @@
 
 body {
     font-family: "Roboto Condensed", sans-serif;
-    background-color: #f2f9f7;
-    color: #333;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 header {
-    background-color: #b71c1c;
+    background-color: var(--primary-color);
     color: white;
     text-align: center;
     padding: 1rem;
@@ -19,6 +28,17 @@ header {
 
 h2 {
     text-align: center;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
 }
 
 .hero img {
@@ -37,9 +57,9 @@ main {
 
 .card {
     background: white;
-    border-radius: 8px;
+    border-radius: var(--card-radius);
     padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: var(--card-shadow);
     width: 100%;
 }
 
@@ -74,7 +94,7 @@ main {
 }
 
 footer {
-    background-color: #b71c1c;
+    background-color: var(--primary-color);
     color: white;
     text-align: center;
     padding: 1rem;
@@ -82,6 +102,6 @@ footer {
 }
 
 footer .last-modified {
-    color: #ff0;
+    color: var(--accent-color);
     font-size: 0.9rem;
 }
