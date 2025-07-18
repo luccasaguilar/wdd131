@@ -81,9 +81,13 @@
     }
 
     .weather-card .weather-icon {
-        width: 30px;
-        height: 30px;
-        margin: 0;
+        display: none;
+    }
+
+    .weather-emoji {
+        display: inline;
+        font-size: 1.5rem;
+        margin-left: 0.5rem;
     }
 
     footer {
