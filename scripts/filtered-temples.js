@@ -94,7 +94,7 @@ function displayTemples(filteredTemples) {
       <h3>${temple.templeName}</h3>
       <p><strong>Location:</strong> ${temple.location}</p>
       <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
-      <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
+      <p><strong>Area:</strong> ${temple.area} sq ft</p>
       <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
     `;
 
