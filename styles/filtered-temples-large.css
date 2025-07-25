@@ -1,0 +1,38 @@
+@media screen and (min-width: 700px) {
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    header {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .nav {
+        position: static;
+        width: 100%;
+    }
+
+    .nav ul {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        box-shadow: none;
+        background: none;
+        gap: 20px; 
+        width: 100%;   
+        justify-content:flex-end;
+    }
+
+    .nav a {
+        color: white;
+        font-size: x-large;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+}
