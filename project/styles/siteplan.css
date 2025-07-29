@@ -1,5 +1,3 @@
-/* siteplan.css */
-
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #E5F4FD;
@@ -16,7 +14,8 @@ header {
     padding: 20px;
 }
 
-header img {
+.site-logo {
+    max-width: 150px;
     margin-top: 10px;
 }
 
@@ -42,6 +41,26 @@ h1, h2 {
 ul {
     list-style: disc;
     padding-left: 20px;
+}
+
+.color-darkblue {
+    color: #1E3A8A;
+    font-weight: bold;
+}
+
+.color-lightblue {
+    background-color: #1E3A8A;
+    color: #E5F4FD;
+    font-weight: bold;
+    padding: 2px 5px;
+    display: inline-block;
+}
+
+.wireframe-img {
+    max-width: 600px;
+    width: 100%;
+    display: block;
+    margin: 10px auto;
 }
 
 footer {
