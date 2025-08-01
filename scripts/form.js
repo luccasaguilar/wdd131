@@ -1,4 +1,3 @@
-// Product array
 const products = [
   {
     id: "fc-1888",
@@ -28,7 +27,6 @@ const products = [
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Populate product select options
     const productSelect = document.getElementById('product');
     products.forEach(product => {
         const option = document.createElement('option');
@@ -37,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
         productSelect.appendChild(option);
     });
 
-    // Counter for reviews
     const reviewCount = localStorage.getItem('reviewCount') || 0;
     localStorage.setItem('reviewCount', reviewCount);
 });
