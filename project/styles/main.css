@@ -79,10 +79,10 @@ nav li a {
   background: #e9e9e9;
 }
 
-.settlement-tips h2 {
+/* .settlement-tips h2 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
-}
+} */
 
 footer {
   background-color: #183A73;
@@ -90,4 +90,8 @@ footer {
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
+}
+
+h2 {
+    font-size:xx-large;
 }
