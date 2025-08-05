@@ -10,3 +10,11 @@ document.getElementById('guidanceForm')?.addEventListener('submit', function(e) 
 
     document.getElementById('formMessage').innerText = 'Thank you for your question!';
 });
+
+const toggleBtn = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.nav');
+
+toggleBtn.addEventListener('click', () => {
+    nav.classList.toggle('active');
+    toggleBtn.textContent = nav.classList.contains('active') ? '✖' : '☰';
+});
