@@ -1,0 +1,50 @@
+@media (min-width: 950px) {
+    nav ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    }
+
+    .hero {
+    padding: 5rem 2rem;
+    }
+
+    .cards {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    }
+
+    .card {
+    flex: 1 1 30%;
+    max-width: 300px;
+    }
+
+    .settlement-tips {
+    padding: 2rem;
+    text-align: center;
+    }
+
+    .settlement-tips ul {
+    columns: 2;
+    column-gap: 2rem;
+    padding: 0;
+    }
+
+    header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    }
+
+    header .logo {
+    margin: 0;
+    width: 50px;
+    }
+
+    header nav ul {
+    margin: 0;
+    }
+}
