@@ -50,6 +50,17 @@
         padding: 0;
     }
 
+    .settlement-wrapper {
+        flex-direction: row;
+        text-align: left;
+        gap: 2rem;
+    }
+
+    .settlement-wrapper img {
+        max-width: 300px;
+        margin-bottom: 0;
+    }
+
     header {
         display: flex;
         justify-content: space-between;

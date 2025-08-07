@@ -6,6 +6,15 @@ body {
   color: #333;
 }
 
+.lazy-fade {
+  opacity: 0;
+  transition: opacity 0.6s ease-in;
+}
+
+.lazy-fade-loaded {
+  opacity: 1;
+}
+
 header {
   background-color: #183A73;
   color: white;
@@ -73,6 +82,15 @@ h2 {
   color: white;
   text-align: center;
   padding: 3rem 1rem;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .hero .btn {
@@ -239,6 +257,10 @@ footer {
   padding-left: 20px;
 }
 
+.settlement-section ul li {
+  margin-bottom: 0.5rem;
+}
+
 .settlement-container > h2 {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
@@ -252,6 +274,38 @@ footer {
   margin-left: auto;
   margin-right: auto;
   line-height: 1.5;
+}
+
+.settlement-tips {
+  background-color: white;
+  padding: 2rem 1rem;
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 960px;
+}
+
+.settlement-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.settlement-wrapper img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.settlement-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.settlement-text p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 .pathways-container {
@@ -268,7 +322,7 @@ footer {
   text-align: left;
 }
 
-.pathway-img {
+.pathway img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
