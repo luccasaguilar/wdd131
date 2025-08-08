@@ -107,9 +107,9 @@ function restoreLastPathway() {
     h2.insertAdjacentHTML('beforeend', ` <span class="badge" aria-label="Last viewed">★</span>`);
   }
 
-  requestAnimationFrame(() => {
-    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  });
+  // requestAnimationFrame(() => {
+  //   target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  // });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
