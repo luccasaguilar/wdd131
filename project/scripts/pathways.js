@@ -77,14 +77,12 @@ function renderPrograms() {
   });
 }
 
-/* ===== Enhancements: localStorage + restore, using only template literals ===== */
 const STORAGE_KEY = 'lastPathwayId';
 
 function attachPathwayTracking() {
   const container = document.getElementById('pathways-container');
   if (!container) return;
 
-  // Save section id whenever user clicks inside a pathway (links or inside the section)
   container.addEventListener('click', (e) => {
     const section = e.target.closest('.pathway');
     if (!section) return;
@@ -106,10 +104,6 @@ function restoreLastPathway() {
   if (h2 && !h2.querySelector('.badge')) {
     h2.insertAdjacentHTML('beforeend', ` <span class="badge" aria-label="Last viewed">★</span>`);
   }
-
-  // requestAnimationFrame(() => {
-  //   target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  // });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
