@@ -78,4 +78,8 @@ header nav ul {
   display: none;
 }
 
+.contact-form-section {
+  max-width: 500px;  
+}
+
 }
