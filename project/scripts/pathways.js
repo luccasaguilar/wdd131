@@ -1,4 +1,3 @@
-// Data model: arrays + objects
 const pathwaysData = [
   {
     id: "express-entry",
@@ -80,10 +79,8 @@ const pathwaysData = [
   }
 ];
 
-// DOM target
 const container = document.getElementById("pathways-container");
 
-// Guard clause
 if (!container) {
   console.warn("pathways-container not found.");
 } else {
@@ -92,34 +89,29 @@ if (!container) {
     section.className = "pathway";
     section.id = sectionData.id;
 
-    // Build image (with simple conditional fallback)
     const img = document.createElement("img");
     img.className = "pathway-img lazy-fade";
     img.loading = "lazy";
     img.alt = sectionData.image.alt || "";
     img.src = sectionData.image.src;
 
-    // fade-in when loaded (handles dynamically created images)
     img.addEventListener("load", () => {
     img.classList.add("lazy-fade-loaded");
     });
-    // if cached, 'load' might have fired before listener
+
     if (img.complete) {
     img.classList.add("lazy-fade-loaded");
     }
 
-    // optional: fallback for _ret.webp -> .webp
     img.addEventListener("error", () => {
     if (img.src.includes("_ret.webp")) {
         img.src = img.src.replace("_ret.webp", ".webp");
     }
     });
 
-    // Title
     const h2 = document.createElement("h2");
     h2.textContent = sectionData.title;
 
-    // Content builder
     let contentHTML = "";
 
     if (sectionData.programs && sectionData.programs.length) {
@@ -136,7 +128,7 @@ if (!container) {
     }
 
     if (sectionData.summaryBlocks && sectionData.summaryBlocks.length) {
-      // PNP blocks
+
       const blocks = sectionData.summaryBlocks
         .map(block => `
           <p>${block.p}</p>
