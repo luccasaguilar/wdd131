@@ -356,3 +356,6 @@ footer {
   transform: scale(1.02);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
+.pathway.is-preferred { outline: 2px solid #d32f2f; outline-offset: 4px; }
+.pathway .badge { font-size: .9rem; color: #d32f2f; margin-left: .4rem; }
